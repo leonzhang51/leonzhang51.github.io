@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zhang Lie Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/work.css">
+    <link rel="icon" type="image/png" href="../img/logo_blackletter.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+   
+
+</head>
+
+<body>
+
+
+
+
+    <!-- <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 ">
+          <h1 class="font-weight-bold">Vertically Centered Masthead Content</h1>
+          <p class="lead">A great starter layout for a landing page</p>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- <div class="jumbotron text-center">
+        <h1>My works</h1>
+
+    </div> 
+
+      <div class="container ">
+        <div class="card-deck">
+
+            <div class="card card1">
+
+                <div class="card-body card1_image">
+                    <a href="cityparking.html">
+                        <h5 class="card-text text-center">City Parking</h5>
+                    </a>
+
+                    <img class="img-fluid cityparking" src="../img/cityparking.jpg">
+                </div>
+                <div class="card-body card1_text">
+                    <a href="cityparking.html">
+                        <h5 class="card-text text-center">City Parking</h5>
+                    </a>
+
+                    <p class="card-text text-center">this app will help you a lot</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-body ">
+                    <p class="card-text text-center">Nightlife Ville</p>
+                    <img class="img-fluid" src="../img/nightlife.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="card-deck mt-5">
+            <div class="card ">
+
+                <div class="card-body ">
+                    <p class="card-text text-center">Africa community business listing</p>
+                    <img class="img-fluid" src="../img/businesslisting.jpg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body ">
+                    <p class="card-text text-center">Africa culture trip</p>
+                    <img class="img-fluid" src="../img/culture.jpg">
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">Zhang Lie</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact Us</a>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <div class="imgBx">
+                <img class="img-fluid" src="../img/culture.jpg">
+            </div>
+            <div class="contentBx">
+                <div>
+                    <h2> culture trip afric</h2>
+                    <p>
+                        This is a really good website, it can help you enjoy nice stuff in africa
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img class="img-fluid" src="../img/businesslisting.jpg">
+            </div>
+            <div class="contentBx">
+                <div>
+                    <h2> culture trip afric</h2>
+                    <p>
+                        This is a really good website, it can help you enjoy nice stuff in africa
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img class="img-fluid" src="../img/nightlife.jpg">
+            </div>
+            <div class="contentBx">
+                <div>
+                    <h2> culture trip afric</h2>
+                    <p>
+                        This is a really good website, it can help you enjoy nice stuff in africa
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img class="img-fluid" src="../img/cityparking.jpg">
+            </div>
+            <div class="contentBx">
+                <div>
+                    <h2> culture trip afric</h2>
+                    <p>
+                        This is a really good website, it can help you enjoy nice stuff in africa
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+
+        navBarToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        });
+    </script>
+
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(../img/nightlife.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(../img/cityparking.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(../img/businesslisting.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(../img/culture.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(../img/taiji_skill_logo.png)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+</body>
+
+</html>

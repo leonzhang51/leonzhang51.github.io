@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+/*font-family: 'Lobster', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Lora&display=swap');
+
+/*font-family: 'Lobster', cursive;
+font-family: 'Lora', serif;*/
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+h6 {
+    font-family: 'Lobster', cursive;
+}
+
+a,
+p {
+    font-family: 'Lora', serif;
+}
+
+
+
+.landpage {
+
+    background-image: url('../img/background_white_new.jpg');
+    height: 100vh;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
