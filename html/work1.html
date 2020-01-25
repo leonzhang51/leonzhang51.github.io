@@ -100,75 +100,50 @@
 
         </ul>
     </nav>
-    <div class="container">
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/culture.jpg">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> culture trip afric</h2>
-                    <p>
-                        Provide a unique travel experience in Africa, to discover intriguing and exciting activities to
-                        do there!
 
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/businesslisting.jpg">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> Sireta on-demand service </h2>
-                    <p>
-                        The Sireta service center is a utility APP meant to order common services like house cleaning,
-                        dry cleaning, plumbing help, with just a few clicks! A stress and trouble-free ordering process,
-                        as easy as hailing an Uber
 
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/nightlife.jpg">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> Nightlife Ville </h2>
-                    <p>
-                        The Nightlife Ville is dedicated to help users plan nightlife activities easily. It makes this
-                        process fun, simple, just like playing games!
 
-                    </p>
-                    <br>
-                    <h4><a href="nightlife.html">Detail</a></h4>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/cityparking.jpg">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> City Parking </h2>
-                    <p>
-                        City Parking is a mobile APP dedicated to help drivers locate parking lots.
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
 
-                    </p>
-                    <br>
-                    <h4><a href="cityparking.html">Detail</a></h4>
-                </div>
-            </div>
+        navBarToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        });
+    </script>
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../img/nightlife.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/cityparking.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/businesslisting.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/culture.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/taiji_skill_logo.png)"></div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
-
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
 
 </body>
 
