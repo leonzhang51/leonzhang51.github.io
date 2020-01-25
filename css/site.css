@@ -35,3 +35,15 @@ p {
 
 
 }
+@media screen and (max-width: 768px) {
+
+    h1,
+    p {
+        color: whitesmoke;
+    }
+
+    .introduction {
+        background-color: grey;
+        opacity: 0.7;
+    }
+}
