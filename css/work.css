@@ -14,18 +14,26 @@ body {
 
 .container {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    /*display: flex;
+justify-content: space-around;
+    flex-wrap: wrap;*/
+    column-count: 1;
+    column-gap: 2em;
+
     width: 100vw;
     transform-style: preserve-3d;
+}
+
+h1 {
+    text-align: center;
+    margin: 10vh;
 }
 
 .container .box {
     position: relative;
     width: 450px;
     height: 300px;
-    margin: 20px 0;
+    margin: 10vh auto;
     perspective: 1000px;
     overflow: hidden;
     transform-style: preserve-3d;
@@ -167,6 +175,14 @@ a {
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
     }
+
+    .container {
+        column-count: 2;
+        column-rule-style: solid;
+        column-rule-color: rgb(43, 43, 43);
+    }
+
+
 }
 
 
