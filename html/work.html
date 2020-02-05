@@ -1,115 +1,233 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 
 <head>
-    <title>Zhang Lie Portfolio</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/work1.css">
+    <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <link rel="icon" type="image/png" href="../img/logo_blackletter.png">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/site.css">
 
+    <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
 
+    <title>My Works</title>
 </head>
 
 <body>
+    <header class="container my-5">
+        <nav class="navbar navbar-expand-md  navbar-light ">
+            <!-- Brand -->
+            <a class="navbar-brand  " href="../index.html" style="font-size: 1.3em;font-weight:bold;">
+                Zhang Lie
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <b><a class="nav-link " href="work.html">Work</a></b>
+                    </li>
+                    <li class="nav-item ">
+                        <b><a class="nav-link " href="about.html">About</a></b>
+
+                    </li>
+                    <li class="nav-item ">
+                        <b><a class="nav-link " href="my_cv.html">My CV</a></b>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.linkedin.com/in/leon-zhang-design/"><i
+                                class="fa fa-linkedin-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.pinterest.ca/leonzhang14224/"><i
+                                class="fa fa-pinterest-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://github.com/leonzhang51"><i class="fa fa-github"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cd-svg-clipped-slider" data-selected="M780,0H20C8.954,0,0,8.954,0,20v760c0,11.046,8.954,20,20,20h760c11.046,0,20-8.954,20-20V20
+	C800,8.954,791.046,0,780,0z" data-lateral="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851
+	c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648
+	C801.401,404.544,801.401,395.456,795.796,389.851z">
+
+        <div class="gallery-wrapper">
+            <ul class="gallery">
+                <li class="left">
+                    <div class="svg-wrapper">
+
+                        <svg viewBox="0 0 800 800">
+                            <title>City Parking</title>
+                            <defs>
+                                <clipPath id="cd-image-1">
+                                    <path id="cd-morphing-path-1"
+                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
+                                </clipPath>
+                            </defs>
 
 
+                            <image height='800px' width="800px" clip-path="url(#cd-image-1)"
+                                xlink:href="../img/citypark_mono1.jpg"></image>
 
+                            <use xlink:href="#cd-morphing-path-1" class="cover-layer" />
+                        </svg>
+                    </div> <!-- .svg-wrapper -->
+                </li>
 
+                <li class="selected">
+                    <div class="svg-wrapper">
+                        <svg viewBox="0 0 800 800">
+                            <title>NightVille</title>
+                            <defs>
+                                <clipPath id="cd-image-2">
+                                    <path id="cd-morphing-path-2"
+                                        d="M780,0H20C8.954,0,0,8.954,0,20v760c0,11.046,8.954,20,20,20h760c11.046,0,20-8.954,20-20V20 C800,8.954,791.046,0,780,0z" />
+                                </clipPath>
+                            </defs>
 
+                            <image height='800px' width="800px" clip-path="url(#cd-image-2)"
+                                xlink:href="../img/nightville_logo_mono.jpg"></image>
+                            <use xlink:href="#cd-morphing-path-2" class="cover-layer" />
+                        </svg>
+                    </div> <!-- .svg-wrapper -->
+                </li>
 
-    <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-        <a href="#" class="logo">Zhang Lie</a>
-        <ul class="main-nav" id="js-menu">
-            <li>
-                <a href="../index.html" class="nav-links">Home</a>
+                <li class="right">
+                    <div class="svg-wrapper">
+                        <svg viewBox="0 0 800 800">
+                            <title>Sireta Ondemand</title>
+                            <defs>
+                                <clipPath id="cd-image-3">
+                                    <path id="cd-morphing-path-3"
+                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="800px" clip-path="url(#cd-image-3)"
+                                xlink:href="../img/ondemand_mono_logo1.jpg"></image>
+                            <use xlink:href="#cd-morphing-path-3" class="cover-layer" />
+                        </svg>
+                    </div> <!-- .svg-wrapper -->
+                </li>
+
+                <li>
+                    <div class="svg-wrapper">
+                        <svg viewBox="0 0 800 800">
+                            <title>Sireta Travel</title>
+                            <defs>
+                                <clipPath id="cd-image-4">
+                                    <path id="cd-morphing-path-4"
+                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="800px" clip-path="url(#cd-image-4)"
+                                xlink:href="../img/travel/app_logo_mono.jpg"></image>
+                            <use xlink:href="#cd-morphing-path-4" class="cover-layer" />
+                        </svg>
+                    </div> <!-- .svg-wrapper -->
+                </li>
+
+                <li>
+                    <div class="svg-wrapper">
+                        <svg viewBox="0 0 800 800">
+                            <title> L'épicerie en ligne</title>
+                            <defs>
+                                <clipPath id="cd-image-5">
+                                    <path id="cd-morphing-path-5"
+                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
+                                </clipPath>
+                            </defs>
+
+                            <image height='800px' width="800px" clip-path="url(#cd-image-5)"
+                                xlink:href="../img/grocery/logo.jpg"></image>
+                            <use xlink:href="#cd-morphing-path-5" class="cover-layer" />
+                        </svg>
+                    </div> <!-- .svg-wrapper -->
+                </li>
+            </ul>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#0" class="prev">Prev</a></li>
+                    <li><a href="#0" class="next">Next</a></li>
+                </ul>
+            </nav>
+        </div> <!-- .gallery-wrapper -->
+
+        <ul class="caption">
+            <li class="left">
+                <a style="color:blue; font-size:1.2em; font-weight:bold;" href="cityparking.html">Detail</a>
+                <p>
+                    City parking is a mobile APP dedicate to solve parking problem in the city, it brings a lot of
+                    convenience to the driver, like car location info, parking lot info, snow removal notice.
+                </p>
+            </li>
+            <li class="selected">
+                <a style="color:blue; font-size:1.2em; font-weight:bold;" href="nightlife.html">Detail</a>
+                <p>
+                    "Nightlife Ville" is a simple utility app meant to make plan nightlife as simple as
+                    hailing a Uber
+                </p>
+            </li>
+            <li class="right">
+                <a style="color:blue; font-size:1.2em; font-weight:bold;" href="ondemand.html">Detail</a>
+                <p>The sireta service center is a utility app meant to order common services like house cleaning,dry
+                    cleaning, plumbing etc as simple as several clicks, all our stress and hassle free order process
+                    like ordering a Pizza.</p>
             </li>
             <li>
-                <a href="work.html" class="nav-links">Works</a>
+                <a style="color:blue; font-size:1.2em; font-weight:bold;" href="travel.html">Detail</a>
+                <p>Sireta travel offers travelers a deep explorer local culture in Guinee, like the detailed history and
+                    story behind local characters, language, craft and religion.</p>
             </li>
             <li>
-                <a href="about.html" class="nav-links">About</a>
+                <a style="color:blue; font-size:1.2em; font-weight:bold;" href="grocery_store.html">Detail</a>
+                <p>Improve shopping experience for online grocery store</p>
+                <h4>Pour course MA DESIGN ET ERGONOMIE POUR LE WEB</h4>
             </li>
-
-
         </ul>
-    </nav>
-    <h1>featured Project case study</h1>
-    <div class="container">
+        <footer>
+            <div class="container mt-5">
+                <div class="row mt-5 text-center">
+                    <div class="col-md-12 ">
+                        <p class=" mt-5" style="font-size: 1.5em;">
+                            <i class="fa fa-envelope"></i>zhanglie51@gmail.com
+                            <i class="fa fa-phone-square pl-5"></i>(514)998-2475
+                        </p>
+                    </div>
 
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/culture.jpg">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> culture trip afric case study</h2>
-                    <p>
-                        Provide a unique travel experience in Africa, to discover intriguing and exciting activities to
-                        do there!
 
-                    </p>
+
+
+
                 </div>
             </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/ondemand/app_logo.png">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> Sireta on-demand service </h2>
-                    <p>
-                        The Sireta service center is a utility APP meant to order common services like house cleaning,
-                        dry cleaning, plumbing help, with just a few clicks! A stress and trouble-free ordering process,
-                        as easy as hailing an Uber
-
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/nightlife.jpg">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> Nightlife Ville </h2>
-                    <p>
-                        The Nightlife Ville is dedicated to help users plan nightlife activities easily. It makes this
-                        process fun, simple, just like playing games!
-
-                    </p>
-                    <br>
-                    <h4><a href="nightlife.html">Detail</a></h4>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-                <img class="img-fluid" src="../img/cityparking.jpg">
-            </div>
-            <div class="contentBx">
-                <div>
-                    <h2> City Parking </h2>
-                    <p>
-                        City Parking is a mobile APP dedicated to help drivers locate parking lots.
-
-                    </p>
-                    <br>
-                    <h4><a href="cityparking.html">Detail</a></h4>
-                </div>
-            </div>
-        </div>
     </div>
-
-
-
-
+    </footer>
+    </div> <!-- .cd-svg-clipped-slider -->
+    <script src="../js/modernizr-custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+    </script>
+    <script src="../js/snap.svg-min.js"></script>
+    <script src="../js/main.js"></script> <!-- Resource jQuery -->
 </body>
 
 </html>
