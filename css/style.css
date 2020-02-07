@@ -40,7 +40,8 @@ Main Components
   position: relative;
   width: 100%;
   max-width: 1440px;
-  margin: 4em auto;
+  margin: auto;
+  /* margin:4em auto; */
 }
 
 .cd-svg-clipped-slider .gallery-wrapper,
