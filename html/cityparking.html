@@ -61,89 +61,127 @@
             <h1 class="text-center">City Parking mobile APP</h1>
             <img src="../img/cityparking/city_parking_logo3D.png" class="img-fluid mx-auto d-block"
                 style="height:30vh;">
-            <p>City parking is a mobile APP dedicate to solve parking problem in the city, it brings a lot of
-                convenience to the driver, like car location info, parking lot info, snow removal notice.
-            </p>
             <section>
-
+                <h2>1.Context</h2>
+                <h4>1.1 Introduction</h4>
+                <p>City parking is a mobile APP dedicate to solve parking problem in the city, it brings a lot of
+                    convenience to the driver, like car location info, parking lot info, snow removal notice.
+                </p>
+                <h4>1.2 Ideation</h4>
+                <p>The idea was generated in a winter night when I came back home, I saw some vehicle towed before snow
+                    removal action, I thought the owner of vehicle should be informed by some system, like telephone,
+                    SMS or notification on the phone to avoid tickets, then I do research on the internet to look for a
+                    solution, but I am not finding any solution for this.</p>
+                <p>I also notice the parking in the city is a big popular pain for any driver when I do research on the
+                    internet, I ask myself whether I can find a solution for this, the answer is "I want to try". The
+                    first important thing is where I can get public parking information, snow removal information etc.,
+                    I checked the website of government, I found a lot of city have open data service, I can access
+                    parking information, towed vehicle info etc. in database, then I try to validate idea in one mobile
+                    app Meetup of Montreal, I got a lot of useful response in that meetup.</p>
+                <h4>1.3 Most common responses from meetup:</h4>
                 <ul>
-                    <li>My role: UX design, interaction design</li>
-                    <li>Tools: Sketch, Axure,paper and pen</li>
-                    <li>07 2014</li>
-                    <li>Timeline: 4 weeks</li>
-                    <li>Deliverables: High-fedelity prototype, interactive prototype</li>
-                    <li>Team: Individual project</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Context</h2>
-                <h4>Issues presented by the client included the following:</h4>
-                <ul>
-                    <li>Hard to know detail schedule for snow removal</li>
-                    <img src="../img/cityparking/snowremoval_schedule.jpg" class="img-fluid" style="height: 30vh;">
-                    <li>Hard to find on street parking in unfamiliar areas(public free parking or public paid parking)
+                    <p class="text-center mt-3"><b>What's time is it for snow removal?</b></p>
+                    <img src="../img/cityparking/snowremoval_schedule.jpg" class="img-fluid mx-auto d-block"
+                        style="height: 30vh;">
+                    <p class="text-center mt-3"><b>Whether can I park here?</b></p>
+                    <img src="../img/cityparking/roadside_parking_sign.jpg" class="img-fluid mx-auto d-block"
+                        style="height: 30vh;">
+                    <li class="ml-5">Hard to find on street parking in unfamiliar areas(public free parking or public
+                        paid parking)
                     </li>
-                    <li>Tracking vehicle if it be towed or forget parking location</li>
-                    <li>Tracking the time left for parking</li>
-                    <li>Whether can I park here?</li>
-                    <img src="../img/cityparking/roadside_parking_sign.jpg" class="img-fluid" style="height: 30vh;">
+                    <li class="ml-5">Tracking vehicle if it be towed or forget parking location</li>
+                    <li class="ml-5">Tracking the time left for parking</li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Roles and responsibilities</h2>
+                <ul>
+                    <li class="ml-5">My role: UX design, UI design</li>
+                    <li class="ml-5">Tools: Sketch, Axure,paper and pen</li>
+                    <li class="ml-5">Date: 07 2014</li>
+                    <li class="ml-5">Timeline: 4 weeks</li>
+                    <li class="ml-5">Deliverables: High-fedelity prototype, interactive prototype</li>
+                    <li class="ml-5">Team: Passion project</li>
                 </ul>
             </section>
             <section>
-                <h2>Research</h2>
-                <h4>Product Audit</h4>
+                <h2>3. Users and audience</h2>
+                <p>The driver who wan to use public parking lot.</p>
+            </section>
+            <section>
+                <h2>4. Project Constraints</h2>
+                <ul>
+                    <li class="ml-5">All the system data depend on open data from local government</li>
+                    <li class="ml-5">All the real time data depend on service of government</li>
+                    <li class="ml-5">Location base service depend on user's cell phone, it will produce deviation by
+                        different model
+                        cellphone. </li>
+                    <li class="ml-5">This is a passion project, I can not work it on full time, no budget for this, I
+                        have to do all
+                        user research by myself in spare time</li>
+                </ul>
+            </section>
+            <section>
+                <h2>5. Research</h2>
+                <h4>5.1 Product Audit</h4>
                 <p>Before brainstorming solutions, I wanted to explore the product to understand it deeper and see if
                     there were other UI/UX issues. Later, I’ll mention some issues that I discovered in the “Define”
                     section.
                 </p>
-                <h4>Competitive Analysis</h4>
+                <h4>5.2 Competitive Analysis</h4>
                 <p>I started by looking at other app which can provide parking info for driver in montreal which used
                     open API provided by city government on mobile to identify what seemed to work and what did not.</p>
                 <p>During this research I noticed no APPs can provide function following :</p>
                 <ul>
-                    <li><b>Search parking lot:</b> Help driver to find parking lot in daily life.
+                    <li class="ml-5"><b>Search parking lot:</b> Help driver to find parking lot in daily life.
                     </li>
-                    <li><b>Provide timer for parking except public paid parking:</b> provide detail timer function for
+                    <li class="ml-5"><b>Provide timer for parking except public paid parking:</b> provide detail timer
+                        function for
                         public free parking or paid parking, like when the city conducts its street maintenance,cleans
                         the roads and snow removal, you have to move your vehicle.
                     </li>
-                    <li><b>Provide detailed information for car location:</b> provide car detail information of
+                    <li class="ml-5"><b>Provide detailed information for car location:</b> provide car detail
+                        information of
                         location, like car towed by some towed service provider, especially in snow removal period.
                     </li>
 
                 </ul>
-                <h4>Define</h4>
-                <h5>Pain points</h5>
-                <Li>Where Can I park?</Li>
-                <li>How long can I park here?</li>
-                <li>Where is my car?</li>
+                <h4>5.3 Define</h4>
+                <h5>5.3.1 Pain points</h5>
+                <Li class="ml-5">Where Can I park?</Li>
+                <li class="ml-5">How long can I park here?</li>
+                <li class="ml-5">Where is my car?</li>
 
 
             </section>
             <section>
 
-                <h2>Design & Concept</h2>
-                <h4>Design Goal</h4>
+                <h2>6. Design & Concept</h2>
+                <h4>6.1 Design Goal</h4>
                 <p>Provide stress and ticket free solution to user(parking finder, vehicle locator, parking timer).</p>
-                <h4>UI design principles</h4>
+                <h4>6.2 UI design principles</h4>
                 <p>Use design principles such as proximity and white space to create a more simple interface.</p>
-                <h4>Sitemap</h4>
-                <img src="../img/cityparking/sitemap.jpg" class="img-fluid" style="width: 60vw;">
-                <h4>Function diagram</h4>
-                <img src="../img/cityparking/function_diagram.jpg" class="img-fluid" style="width: 30vw;">
-                <h4>First Wireframe</h4>
-                <img src="../img/cityparking/wireframe.jpg" class="img-fluid" style="width: 30vw;">
-                <h4>Interaction Design</h4>
-                <img src="../img/cityparking/interaction_design.jpg" class="img-fluid" style="width: 40vw;">
+                <h4 class="text-center">6.3 Sitemap</h4>
+                <img src="../img/cityparking/sitemap.jpg" class="img-fluid mx-auto d-block" style="width: 60vw;">
+                <h4 class="text-center">6.4 Function diagram</h4>
+                <img src="../img/cityparking/function_diagram.jpg" class="img-fluid mx-auto d-block"
+                    style="width: 30vw;">
+                <h4 class="text-center">6.5 First Wireframe</h4>
+                <img src="../img/cityparking/wireframe.jpg" class="img-fluid mx-auto d-block" style="width: 30vw;">
+                <h4 class="text-center">6.6 Interaction Design</h4>
+                <img src="../img/cityparking/interaction_design.jpg" class="img-fluid mx-auto d-block"
+                    style="width: 40vw;">
 
 
             </section>
             <section>
-                <h2>Feedback & Iterations</h2>
-                <h4>Presenting my work to the members of mobile dev meetup</h4>
+                <h2>7. Feedback & Iterations</h2>
+                <h4>7.1 Presenting my work to the members of mobile dev meetup</h4>
                 <p>As our schedule, we will meet together once a week to discus our project. I would present my design
                     concepts and receive design critiques from others</p>
-                <h4>Lesson Learned</h4>
+                <h4>7.2 Lesson Learned</h4>
                 <p>When presenting design work, come into meetings ready to learn with an open mind. Confidently present
                     your designs, but humbly take feedback. Oftentimes there a new perspectives and considerations that
                     others will share with you.</p>
@@ -162,8 +200,8 @@
             </section>
 
             <section>
-                <h2>Revisiting the issues</h2>
-                <h4>Remove unnecessary function</h4>
+                <h2>8. Revisiting the issues</h2>
+                <h4>8.1 Remove unnecessary function</h4>
                 <div class="row">
                     <div class="col-md-6">
                         <p>Before</p>
@@ -192,39 +230,102 @@
                 </div>
             </section>
             <section>
-                <h2>Final design</h2>
-                <img src="../img/cityparking/final_design.JPG" class="img-fluid" style="width: 60vw;">
+                <h2>9. Final design</h2>
+                <h4>9.1 Part of UI design</h4>
+                <img src="../img/cityparking/final_design.JPG" class="img-fluid mb-5" style="width: 60vw;">
+                <h4 class="text-center">9.2 Interactive presentaion</h4>
+                <div class="row my-5">
+                    <div class="col-md-6 ">
+                        <h5 class="text-center mt-5" style="color:#4a88d7">
+                            There are three main functions in this APP, parking timer, parking locator, and car locator.
+                            After user signed-in user can access all the functions and also can modify the profile.
+                        </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../img/cityparking/signin.gif" class="img-fluid mx-auto d-block" style="width: 14vh;">
+                    </div>
 
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <img src="../img/cityparking/reset_timer.gif" class="img-fluid mx-auto d-block"
+                            style="width: 14vh;">
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <h5 style="color:#4a88d7">Users can set the timer manually, the timer will be adjusted
+                            automatically by the system based on information issued by the government like snow removal,
+                            street cleaning, rush hour regulation, etc.</h5>
+                    </div>
+
+                </div>
+                <div class="row my-5">
+                    <div class="col-md-6 ">
+                        <h5 class="text-center " style="color:#4a88d7">After choosing the vehicle locator, the system
+                            will provide the most
+                            recently recorded car location on the map and guide the user to the parking location. If the
+                            user can't find the car at the location, the system will provide two possible locations to
+                            get back the car, If towing by the private company the system will provide company info and
+                            regular cost, if towing by city government the system will provide information of parking
+                            location, the estimated amount of fine, and the contact phone number.</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../img/cityparking/car_locator.gif" class="img-fluid mx-auto d-block"
+                            style="width: 14vh;">
+                    </div>
+
+
+                </div>
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <img src="../img/cityparking/parkinglocator.gif" class="img-fluid mx-auto d-block"
+                            style="width: 14vh;">
+                    </div>
+                    <div class="col-md-6 ">
+                        <h5 class="text-center " style="color:#4a88d7">After choosing the parking locator, the system
+                            will provide the most closely parking location on the map and guide the user to the parking
+                            location, the user sorting result by filter like public free parking, public free parking
+                            with code, public paid parking, and private parking. After chose the parking, the system
+                            will guide the user parking in the location, after the user confirmed the parking location,
+                            the system will record the location and start the timer automatically.</h5>
+                    </div>
+
+                </div>
             </section>
             <section>
-                <h2>Retrospective</h2>
-                <h4>What I'd do differently?</h4>
+                <h2>10. Retrospective</h2>
+                <h4>10.1 What I'd do differently?</h4>
                 <p>Looking back on this project, I would have:</p>
                 <ul>
-                    <li>Concentrate on the core problem of clients,don’t add unnecessary function as your imagine which
+                    <li class="ml-5">Concentrate on the core problem of clients,don’t add unnecessary function as your
+                        imagine which
                         not validated by client </li>
-                    <li>Taken more initiative to ensure research was happening throughout the project.</li>
-                    <li>Questioned the problems that the client presented to us so that I know they are really problems
+                    <li class="ml-5">Taken more initiative to ensure research was happening throughout the project.</li>
+                    <li class="ml-5">Questioned the problems that the client presented to us so that I know they are
+                        really problems
                         that need to be solved.
                     </li>
                 </ul>
-                <h4>Lesson learned:</h4>
+                <h4>10.2 Outcome</h4>
+                <p>After I finished design this project, I achieve the goal what I set at the begining, but I can not
+                    find any partner or
+                    team to make this design reality, for technical issues or finance issues I can not confirm, I have
+                    to collect all the document and put it in my backup harddrive.</p>
+                <h4>10.3 Lesson learned:</h4>
                 <p>During this project, I learned:</p>
-                <li>You have to take the initiative and do the research yourself.</li>
-                <li>Pay attention constraints and roadblocks when you design the product because UX research does not
+                <li class="ml-5">You have to take the initiative and do the research yourself.</li>
+                <li class="ml-5">Pay attention constraints and roadblocks when you design the product because UX
+                    research does not
                     always follow the perfect route.</li>
-                <li>To be a good listener, go out to present your design, do not always stay in your UX island alone
+                <li class="ml-5">To be a good listener, go out to present your design, do not always stay in your UX
+                    island alone
                 </li>
+                <li class="ml-5">To be quatified product designer, you have to have more knowledge, like how to make
+                    this design to
+                    be a real mobile APP, how this app make profit</li>
+
             </section>
-            <section>
-                <h2>Project Constraints</h2>
-                <ul>
-                    <li>All the system data depend on open data from local government</li>
-                    <li>All the real time data depend on government</li>
-                    <li>Location base service depend on user's cell phone, it will produce deviation by different model
-                        cellphone. </li>
-                </ul>
-            </section>
+
 
         </article>
     </main>
