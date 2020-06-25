@@ -1,26 +1,33 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="../css/site.css">
     <link rel="icon" type="image/png" href="../img/logo_blackletter.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="../css/site.css">-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
 
-    <title>My Works</title>
 </head>
 
 <body>
-    <header class="container my-5">
-        <nav class="navbar navbar-expand-md  navbar-light ">
+
+
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light   fixed-top">
+            <!-- <nav class="navbar navbar-expand-md  navbar-light   fixed-top"> -->
             <!-- Brand -->
-            <a class="navbar-brand  " href="../index.html" style="font-size: 1.3em;">
-                Leon Zhang
+            <a class="navbar-brand text-muted" href="../index.html">
+                <img src="../img/black_logo.png" style="width: 7vh;">
+
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -29,17 +36,17 @@
             </button>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <div class="collapse  navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link " href="work.html">Work</a>
+                        <h6><a class="nav-link text-body" href="work.html">Work</a></h6>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="about.html">About</a>
+                        <h6><a class="nav-link text-body" href="about.html">About</a></h6>
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="my_cv.html">My CV</a>
+                        <h6><a class="nav-link text-body" href="my_cv.html">My CV</a></h6>
 
                     </li>
 
@@ -47,257 +54,105 @@
                 </ul>
             </div>
         </nav>
-    </header>
+        <!-- Return to Top -->
+        <a href="javascript:" id="return-to-top">
+            <!--  <i class="icon-chevron-up"></i> -->
+            <svg class="bi bi-arrow-90deg-up" width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="white"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M2.646 6.854a.5.5 0 0 0 .708 0L6 4.207l2.646 2.647a.5.5 0 1 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708z" />
+                <path fill-rule="evenodd"
+                    d="M6 3.5a.5.5 0 0 0-.5.5v6.5A2.5 2.5 0 0 0 8 13h5.5a.5.5 0 0 0 0-1H8a1.5 1.5 0 0 1-1.5-1.5V4a.5.5 0 0 0-.5-.5z" />
+            </svg>
+        </a>
+        <main class="work">
 
-    <div class="cd-svg-clipped-slider" data-selected="M780,0H20C8.954,0,0,8.954,0,20v760c0,11.046,8.954,20,20,20h760c11.046,0,20-8.954,20-20V20
-	C800,8.954,791.046,0,780,0z" data-lateral="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851
-	c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648
-	C801.401,404.544,801.401,395.456,795.796,389.851z">
+            <section class="container-fluid h-100 ">
+                <div class="row h-25"></div>
+                <div class="row h-75 ">
+                    <div class="col-md-6 mt-4 text-center ">
+                        <div class="introduction">
+                            <h1 class="font-weight-bold" style="font-size: 4vw;">My work</h1>
 
-        <div class="gallery-wrapper">
-            <ul class="gallery">
-                <li class="left">
-                    <div class="svg-wrapper">
-
-                        <svg viewBox="0 0 800 800">
-                            <style>
-                                .heavy {
-                                    font: bold 2em serif;
-                                    fill: cornflowerblue;
-                                }
-
-                                .small {
-                                    font: 1.5em sans-serif;
-                                }
-                            </style>
-                            <title>City Parking</title>
-                            <defs>
-                                <clipPath id="cd-image-1">
-                                    <path id="cd-morphing-path-1"
-                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
-                                </clipPath>
-                            </defs>
+                        </div>
 
 
-                            <image height='800px' width="800px" clip-path="url(#cd-image-1)"
-                                xlink:href="../img/citypark_mono1.jpg"></image>
+                        <a class="nav-link text-white mt-5" href="#Projects"><button
+                                class='btn btn-outline-dark text-white'>View More</button></a>
 
-                            <use xlink:href="#cd-morphing-path-1" class="cover-layer" />
+                    </div>
+                    <div class="col-md-6 "></div>
+
+
+                </div>
 
 
 
 
-                            <text x="400" y="730" text-anchor="middle" class="small">
-                                City parking is a mobile APP dedicate to solve parking problem in the city, it
-                            </text>
-                            <text x="400" y="760" text-anchor="middle" class="small">
-                                brings a lot of
-                                convenience to the driver, like car location info,
-                            </text>
-                            <text x="400" y="790" text-anchor="middle" class="small">
-                                parking lot info, snow removal notice.
-                            </text>
+            </section>
+
+            <div class="row">
+                <div class="col-md-12 text-center fixed-bottom" id="arrow-down">
+                    <h3><i class="icon-arrow-down"></i></h3>
+                </div>
+            </div>
 
 
-                        </svg>
 
-                    </div> <!-- .svg-wrapper -->
-                    <a href="cityparking.html">
-                        <button class="mt-3 d-block mx-auto btn btn-outline-dark btn-lg">
-                            <h3>Detail</h3>
-                        </button>
-                    </a>
-                </li>
 
-                <li class="selected">
-                    <div class="svg-wrapper">
-                        <svg viewBox="0 0 800 800">
-                            <style>
-                                .heavy {
-                                    font: bold 2em serif;
-                                    fill: cornflowerblue;
-                                }
+        </main>
 
-                                .small {
-                                    font: 1.5em sans-serif;
-                                }
-                            </style>
 
-                            <title>NightVille</title>
-                            <defs>
-                                <clipPath id="cd-image-2">
-                                    <path id="cd-morphing-path-2"
-                                        d="M780,0H20C8.954,0,0,8.954,0,20v760c0,11.046,8.954,20,20,20h760c11.046,0,20-8.954,20-20V20 C800,8.954,791.046,0,780,0z" />
-                                </clipPath>
-                            </defs>
+        <section class="container-fluid" id="Projects">
+            <h1 class="m-5 text-center">Recent Projects</h1>
+            <div class="card-deck m-auto  " style="width:80%;">
+                <div class="card rounded">
+                    <img class="card-img-top" src="../img/nightville_logo_mono.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="reservation.html"><button class="btn btn-warning">Detail</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="../img/grocery/App_logo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Improve shopping experience for online Grocery Store</h5>
+                        <p class="card-text">Simplify the shopping process, finish grocery shopping tasks by choosing
+                            recipes and meal plans, all the process as simple as 6 clicks.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="grocery.html"><button class="btn btn-danger">Detail</button></a>
 
-                            <image height='800px' width="800px" clip-path="url(#cd-image-2)"
-                                xlink:href="../img/nightville_logo_mono.jpg"></image>
-                            <use xlink:href="#cd-morphing-path-2" class="cover-layer" />
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="../img/travel/app_logo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height
+                            action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
 
-                            <text x="400" y="740" text-anchor="middle" class="small">"Nightlife Ville" is a simple
-                                utility app meant </text>
-                            <text x="400" y="780" text-anchor="middle" class="small">to make plan nightlife as simple as
-                                hailing a Uber!</text>
+        </section>
 
-                        </svg>
-                    </div> <!-- .svg-wrapper -->
-                    <a href="nightlife.html">
-                        <button class="mt-3 d-block mx-auto btn btn-outline-dark btn-lg">
-                            <h3>Detail</h3>
-                        </button>
-                    </a>
-                </li>
 
-                <li class="right">
-                    <div class="svg-wrapper">
-                        <svg viewBox="0 0 800 800">
-                            <style>
-                                .heavy {
-                                    font: bold 2em serif;
-                                    fill: cornflowerblue;
-                                }
-
-                                .small {
-                                    font: 1.5em sans-serif;
-                                }
-                            </style>
-                            <title>Sireta Ondemand</title>
-                            <defs>
-                                <clipPath id="cd-image-3">
-                                    <path id="cd-morphing-path-3"
-                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
-                                </clipPath>
-                            </defs>
-
-                            <image height='800px' width="800px" clip-path="url(#cd-image-3)"
-                                xlink:href="../img/ondemand_mono_logo1.jpg"></image>
-                            <use xlink:href="#cd-morphing-path-3" class="cover-layer" />
-
-                            <text x="400" y="730" text-anchor="middle" class="small">The sireta service center is a
-                                utility app meant to order common services</text>
-                            <text x="400" y="760" text-anchor="middle" class="small">like house cleaning,dry cleaning,
-                                plumbing etc as simple as several clicks,</text>
-                            <text x="400" y="790" text-anchor="middle" class="small">all our stress and hassle free
-                                order process like ordering a Pizza.</text>
-                        </svg>
-                    </div> <!-- .svg-wrapper -->
-                    <a href="ondemand.html">
-                        <button class="mt-3 d-block mx-auto btn btn-outline-dark btn-lg">
-                            <h3>Detail</h3>
-                        </button>
-                    </a>
-                </li>
-
-                <li>
-                    <div class="svg-wrapper">
-                        <svg viewBox="0 0 800 800">
-                            <style>
-                                .heavy {
-                                    font: bold 2em serif;
-                                    fill: cornflowerblue;
-                                }
-
-                                .small {
-                                    font: 1.5em sans-serif;
-                                }
-                            </style>
-                            <title>Sireta Travel</title>
-                            <defs>
-                                <clipPath id="cd-image-4">
-                                    <path id="cd-morphing-path-4"
-                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
-                                </clipPath>
-                            </defs>
-
-                            <image height='660px' width="800px" clip-path="url(#cd-image-4)"
-                                xlink:href="../img/travel/app_logo_mono.jpg"></image>
-                            <use xlink:href="#cd-morphing-path-4" class="cover-layer" />
-
-                            <text x="400" y="730" text-anchor="middle" class="small">Sireta travel offers travelers a
-                                deep explorer local culture in Guinee, </text>
-                            <text x="400" y="760" text-anchor="middle" class="small">like the detailed history and
-                                story behind local characters, </text>
-                            <text x="400" y="790" text-anchor="middle" class="small">language, craft and
-                                religion.</text>
-                        </svg>
-                    </div> <!-- .svg-wrapper -->
-                    <a href="travel.html">
-                        <button class="mt-3 d-block mx-auto btn btn-outline-dark btn-lg">
-                            <h3>Detail</h3>
-                        </button>
-                    </a>
-                </li>
-
-                <li>
-                    <div class="svg-wrapper">
-                        <svg viewBox="0 0 800 800">
-                            <style>
-                                .heavy {
-                                    font: bold 2em serif;
-                                    fill: cornflowerblue;
-                                }
-
-                                .small {
-                                    font: 1.5em sans-serif;
-                                }
-                            </style>
-                            <title> L'épicerie en ligne</title>
-                            <defs>
-                                <clipPath id="cd-image-5">
-                                    <path id="cd-morphing-path-5"
-                                        d="M795.796,389.851L410.149,4.204c-5.605-5.605-14.692-5.605-20.297,0L4.204,389.851 c-5.605,5.605-5.605,14.692,0,20.297l385.648,385.648c5.605,5.605,14.692,5.605,20.297,0l385.648-385.648 C801.401,404.544,801.401,395.456,795.796,389.851z" />
-                                </clipPath>
-                            </defs>
-
-                            <image height='640px' width="800px" clip-path="url(#cd-image-5)"
-                                xlink:href="../img/grocery/App_logo_mono.jpg"></image>
-                            <use xlink:href="#cd-morphing-path-5" class="cover-layer" />
-
-                            <text x="400" y="740" text-anchor="middle" class="small">Improve shopping experience for
-                                online grocery store</text>
-                            <text x="400" y="780" text-anchor="middle" class="small">Pour course MA DESIGN ET ERGONOMIE
-                                POUR LE WEB</text>
-                        </svg>
-                    </div> <!-- .svg-wrapper -->
-                    <a href="grocery_store.html">
-                        <button class="mt-3 d-block mx-auto btn btn-outline-dark btn-lg">
-                            <h3>Detail</h3>
-                        </button>
-                    </a>
-                </li>
-            </ul>
-
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#0" class="prev">Prev</a></li>
-                    <li><a href="#0" class="next">Next</a></li>
-                </ul>
-            </nav>
-        </div> <!-- .gallery-wrapper -->
-
-        <ul class="caption">
-            <li class="left">
-
-            </li>
-            <li class="selected">
-
-            </li>
-            <li class="right">
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-        </ul>
         <footer>
             <div class="container mt-5">
                 <div class="row mt-5 text-center">
                     <div class="col-md-12 ">
-                        <p class=" mt-5" style="font-size: 1em;">
+                        <p class=" mt-5" style="font-size: 1.5em;">
                             <i class="fa fa-envelope mx-3"></i>leonzhang51@gmail.com
                             <i class="fa fa-phone-square pl-5 mx-3"></i>(514)998-2475
                         </p>
@@ -310,33 +165,41 @@
                         <div class="row">
                             <div class="col-sm-4"><a class="nav-link "
                                     href="https://www.linkedin.com/in/leon-zhang-design/"><i
-                                        class="fa fa-linkedin-square" style="font-size: 1em;"></i></a>
+                                        class="fa fa-linkedin-square" style="font-size: 1.5em;color:gray"></i></a>
                             </div>
                             <div class="col-sm-4">
                                 <a class="nav-link " href="https://www.pinterest.ca/leonzhang14224/"><i
-                                        class="fa fa-pinterest-square" style="font-size: 1em;"></i></a>
+                                        class="fa fa-pinterest-square" style="font-size: 1.5em;color:gray"></i></a>
                             </div>
                             <div class="col-sm-4">
                                 <a class="nav-link " href="https://github.com/leonzhang51"><i class="fa fa-github"
-                                        style="font-size: 1em;"></i></a>
+                                        style="font-size: 1.5em; color:gray"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-5"></div>
                 </div>
             </div>
-    </div>
-    </footer>
-    </div> <!-- .cd-svg-clipped-slider -->
-    <script src="../js/modernizr-custom.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script>
-        if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
-    </script>
-    <script src="../js/snap.svg-min.js"></script>
-    <script src="../js/main.js"></script> <!-- Resource jQuery -->
-</body>
+            </div>
+        </footer>
+
+        <script>
+            // ===== Scroll to Top ==== 
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200); // Fade in the arrow
+                    $('#arrow-down').addClass('d-none'); //display arrow down at the bottom of the screen
+                } else {
+                    $('#return-to-top').fadeOut(200); // Else fade out the arrow
+                    $('#arrow-down').removeClass('d-none'); //hide arrow down
+                }
+            });
+            $('#return-to-top').click(function () { // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop: 0 // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    </body>
 
 </html>
