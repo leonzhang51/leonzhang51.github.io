@@ -36,9 +36,11 @@ h6 {
 }
 
 
+
+/* for homepage background image*/
 .landpage {
 
-    background-image: url('../img/home_filter.png');
+    background-image: url('../img/frame5.png');
     height: 100vh;
     min-height: 500px;
     background-repeat: no-repeat;
@@ -47,6 +49,7 @@ h6 {
 
 
 }
+
 .work {
 
     background-image: url('../img/work/pale-work-at-home.png');
@@ -55,7 +58,7 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    color:white;
+    color: white;
 
 
 }
@@ -90,6 +93,7 @@ h6 {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top svg {
     color: #fff;
     margin: 0;
@@ -103,9 +107,11 @@ h6 {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
 }
+
 #return-to-top:hover svg {
     color: #fff;
     top: 5px;
@@ -115,14 +121,12 @@ h6 {
 
 @media screen and (max-width: 768px) {
 
+.socialnetwork{
+    display: none;
+}
 
-
-    .introduction,
-    .navbar-nav {
-        background-color: grey;
-        opacity: 0.7;
-        color: whitesmoke;
-    }
+  
+  
 
 
     .custom-toggler .navbar-toggler-icon {
