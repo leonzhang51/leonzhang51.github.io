@@ -118,14 +118,35 @@ h6 {
 }
 
 
+.otherUi img{
+    height:20vh;
+
+}
+.footer_social{
+    display:flex;
+    justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
 
 .socialnetwork{
     display: none;
 }
-
-  
+.aboutme_logo{
+    display:none;
+}
+  footer{
+      font-size: 0.6em;
+  }
+  .introduction{
+      margin-top: -15vh;
+  }
+ .card{
+     font-size:0.6em;
+ }
+ h5{
+     font-size:1em;
+ }
   
 
 
