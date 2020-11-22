@@ -139,7 +139,18 @@ h6 {
       font-size: 0.6em;
   }
   .introduction{
-      margin-top: -15vh;
+      margin-top: -22vh;
+      font-weight: bold;
+      
+  }
+  .introduction img{
+      width:10vw;
+  }
+  .introduction h1{
+      font-size:5vw;
+  }
+  .introduction p{
+      font-size: 0.9em;
   }
  .card{
      font-size:0.6em;
