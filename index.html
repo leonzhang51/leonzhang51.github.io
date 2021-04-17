@@ -128,7 +128,7 @@
 
                         <div class="col-md-4 mt-5 h-75 text-center ">
                             <div class="introduction">
-                                <img src="https://leonzhang51.github.io/img/taichi.png" alt="taichi">
+                                <img src="./img/taichi.png" alt="taichi">
                                 <h1 class="font-weight-bold mt-3">Leon Zhang</h1>
                                 <p class="lead ">I am UX engineer who loves to Transform the Ideas Into Reality
                                 </p>
@@ -292,36 +292,72 @@
         <section class="container-fluid mt-5 text-center">
             <h1 class="m-5 text-center">Other UI Design</h1>
             <div class="row ">
-                <div class="col-md-4 otherUi text-center mt-3">
-                    <img src="./img/other_ui/fitness.png" alt="fitness">
-
+                <div class="col-md-3 otherUi text-center mt-3" id="sports_club">
+                    <img src="./img/other_ui/fitness.png" alt="sports_club">
+                    <h5>Sports club website UI</h5>
                 </div>
-                <div class="col-md-4 otherUi text-center mt-3">
-                    <img src="./img/other_ui/portfolio.jpg" alt="portfolio">
+                <div class="col-md-3 otherUi text-center mt-3" id="beats">
+                    <img src="./img/project_image/beats/Sign_in.png" alt="beats_online">
+                    <h5>Beats online trading platform</h5>
                 </div>
-                <div class="col-md-4 otherUi text-center mt-3">
-                    <img src="./img/other_ui/portfolio1.jpg" alt="portfolio1">
+                <div class="col-md-3 otherUi text-center mt-3" id="parking">
+                    <img src="./img/project_image/city_parking/appCover.png" alt="city_parking">
+                    <h5>City parking mobile APP</h5>
                 </div>
-                
+                <div class="col-md-3 otherUi text-center mt-3" id="ondemand">
+                    <img src="./img/project_image/ondemand/app_logo.png" alt="on-demand">
+                    <h5>On-demand service mobile APP</h5>
+                </div>
 
             </div>
             <div class="row mt-5">
-                <div class="col-md-4 otherUi text-center mt-3">
-                    <img src="./img/other_ui/portfolio2.jpg" alt="portfolio">
+                <div class="col-md-4 otherUi text-center mt-3" id="grocery">
+                    <img src="./img/project_image/grocery_online/meal_plan_detail.png" alt="grocery_Online">
+                    <h5>new design for online grocery store</h5>
                 </div>
-                <div class="col-md-4 otherUi text-center mt-3">
-                    <img src="./img/other_ui/beattrade.png" alt="fitness">
+                <div class="col-md-4 otherUi text-center mt-3" id="nightlife">
+                    <img src="./img/project_image/nightlifeVille/Appcoverpage.png" alt="nightlife">
+                    <h5>Reservation mobile APP</h5>
+                </div>
 
+                <div class="col-md-4 otherUi text-center mt-3" id="africa_travel">
+                    <img src="./img/project_image/travel/app_logo.jpg" alt="africa_travel">
+                    <h5>Africa travel website</h5>
                 </div>
-                <div class="col-md-4 otherUi text-center mt-3">
-                    <img src="./img/other_ui/beattrade1.png" alt="portfolio">
-                </div>
-                
 
 
             </div>
 
         </section>
+
+
+
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
     </main>
@@ -379,6 +415,81 @@
             $('body,html').animate({
                 scrollTop: 0 // Scroll to top of body
             }, 500);
+        });
+
+        $("#sports_club").click(function (event) {
+            $('.modal-title').text('Sports Club');
+            $('.modal-body').html(
+                '<img src="./img/project_image/sport_club/landpage.png" alt="sports_club" style="width:100%">'
+            )
+            $("#myModal").modal();
+        });
+        $("#beats").click(function () {
+            $('.modal-title').text('Beats online trading platform');
+            $('.modal-body').html(
+                '<img src="./img/project_image/beats/home_page.png" alt="beats-online" style="width:100%">' +
+                '<img src="./img/project_image/beats/Sign_up.png" alt="beats-online" style="width:100%;margin-top:20px">'
+            )
+            $("#myModal").modal();
+        });
+        $("#parking").click(function () {
+            $('.modal-title').text('Mobile app for searching parking in the city');
+            $('.modal-body').html(
+                '<img src="./img/project_image/city_parking/Signin.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/user_profile.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/car_locator.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/car_parking_info.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/car_find.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/contact_info.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/parking_locator.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/parking_info_free.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/route.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/parking_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/change_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/city_parking/reset_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">'
+            )
+            $("#myModal").modal();
+        });
+        $("#ondemand").click(function () {
+            $('.modal-title').text('Mobile App for searching service around you');
+            $('.modal-body').html(
+                '<img src="./img/project_image/ondemand/design_biz.png" alt="on-demand" style="width:100%">' +
+                '<img src="./img/project_image/ondemand/design_client.png" alt="on-demand" style="width:100%; margin-top:20px">'
+            )
+            $("#myModal").modal();
+        });
+        $("#grocery").click(function () {
+            $('.modal-title').text('Shopping grocery online based on recipe and meal plan');
+            $('.modal-body').html(
+                '<img src="./img/project_image/grocery_online/landingpage.png" alt="grocery-online" style="width:100%">' +
+                '<img src="./img/project_image/grocery_online/Recipe_detail.png" alt="grocery-online" style="width:100%; margin-top:20px">'
+            )
+            $("#myModal").modal();
+        });
+        $("#nightlife").click(function () {
+            $('.modal-title').text('Mobile app for planning your nightlife based on your budget.');
+            $('.modal-body').html(
+                '<img src="./img/project_image/nightlifeVille/Signin.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/reset_password.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/user_profile.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/home.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/search.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/favorites.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/Explore.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/activity_detail.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/checkout.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/order_accepted.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/order_failed.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+                '<img src="./img/project_image/nightlifeVille/MyPlan.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">'
+            )
+            $("#myModal").modal();
+        });
+        $("#africa_travel").click(function (event) {
+            $('.modal-title').text('Booking your unique culture trip in Africa');
+            $('.modal-body').html(
+                '<img src="./img/project_image/travel/animation.gif" alt="africa_travel" style="width:100%">'
+            )
+            $("#myModal").modal();
         });
     </script>
 
