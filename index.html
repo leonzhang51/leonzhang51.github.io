@@ -1,529 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Leon Zhang Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="./img/logo_blackletter.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./img/logo_blackletter.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- Begin Inspectlet Asynchronous Code -->
     <script type="text/javascript">
-        (function () {
-            window.__insp = window.__insp || [];
-            __insp.push(['wid', 305639482]);
-            var ldinsp = function () {
-                if (typeof window.__inspld != "undefined") return;
-                window.__inspld = 1;
-                var insp = document.createElement('script');
-                insp.type = 'text/javascript';
-                insp.async = true;
-                insp.id = "inspsync";
-                insp.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                    '://cdn.inspectlet.com/inspectlet.js?wid=305639482&r=' + Math.floor(new Date().getTime() /
-                        3600000);
-                var x = document.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(insp, x);
-            };
-            setTimeout(ldinsp, 0);
-        })();
+      (function () {
+        window.__insp = window.__insp || [];
+        __insp.push(["wid", 305639482]);
+        var ldinsp = function () {
+          if (typeof window.__inspld != "undefined") return;
+          window.__inspld = 1;
+          var insp = document.createElement("script");
+          insp.type = "text/javascript";
+          insp.async = true;
+          insp.id = "inspsync";
+          insp.src =
+            ("https:" == document.location.protocol ? "https" : "http") +
+            "://cdn.inspectlet.com/inspectlet.js?wid=305639482&r=" +
+            Math.floor(new Date().getTime() / 3600000);
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(insp, x);
+        };
+        setTimeout(ldinsp, 0);
+      })();
     </script>
     <!-- End Inspectlet Asynchronous Code -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160025812-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-160025812-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-160025812-1');
+      gtag("config", "UA-160025812-1");
     </script>
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M7VDCSH');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M7VDCSH");
     </script>
     <!-- End Google Tag Manager -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7VDCSH" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M7VDCSH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <nav class="navbar  navbar-light navbar-expand-xl justify-content-between fixed-top">
-        <!-- <nav class="navbar navbar-expand-md  navbar-light   fixed-top"> -->
-        <!-- Brand -->
-        <a class="navbar-brand text-muted" href="index.html">
-            <img src="img/logo_name.png" style="width: 7vh;">
+    <nav
+      class="
+        navbar navbar-light navbar-expand-xl
+        justify-content-between
+        fixed-top
+      "
+    >
+      <!-- <nav class="navbar navbar-expand-md  navbar-light   fixed-top"> -->
+      <!-- Brand -->
+      <a class="navbar-brand text-muted" href="index.html">
+        <img src="img/logo_name.png" style="width: 7vh" />
+      </a>
 
-        </a>
-
-
-
-        <!-- Navbar links -->
-        <!-- Dropdown -->
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown mr-3">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    <img src="img/menu.png" style="width:2vw;">
-                </a>
-                <div class="dropdown-menu ">
-                    <a class="dropdown-item mr-5" href="#Projects">Work</a>
-                    <a class="dropdown-item" href="#about">About</a>
-                    <a class="dropdown-item" href="./html/my_cv.html">My CV</a>
-                </div>
-            </li>
-        </ul>
-
-
+      <!-- Navbar links -->
+      <!-- Dropdown -->
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown mr-3">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-toggle="dropdown"
+          >
+            <img src="img/menu.png" style="width: 2vw" />
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item mr-5" href="#Projects">Work</a>
+            <a class="dropdown-item" href="#about">About</a>
+            <a class="dropdown-item" href="./html/my_cv.html">My CV</a>
+          </div>
+        </li>
+      </ul>
     </nav>
     <!-- Return to Top -->
     <a href="javascript:" id="return-to-top">
-        <!--  <i class="icon-chevron-up"></i> -->
-        <svg class="bi bi-arrow-90deg-up" width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="white"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-                d="M2.646 6.854a.5.5 0 0 0 .708 0L6 4.207l2.646 2.647a.5.5 0 1 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708z" />
-            <path fill-rule="evenodd"
-                d="M6 3.5a.5.5 0 0 0-.5.5v6.5A2.5 2.5 0 0 0 8 13h5.5a.5.5 0 0 0 0-1H8a1.5 1.5 0 0 1-1.5-1.5V4a.5.5 0 0 0-.5-.5z" />
-        </svg>
+      <!--  <i class="icon-chevron-up"></i> -->
+      <svg
+        class="bi bi-arrow-90deg-up"
+        width="1.3em"
+        height="1.3em"
+        viewBox="0 0 16 16"
+        fill="white"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.646 6.854a.5.5 0 0 0 .708 0L6 4.207l2.646 2.647a.5.5 0 1 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708z"
+        />
+        <path
+          fill-rule="evenodd"
+          d="M6 3.5a.5.5 0 0 0-.5.5v6.5A2.5 2.5 0 0 0 8 13h5.5a.5.5 0 0 0 0-1H8a1.5 1.5 0 0 1-1.5-1.5V4a.5.5 0 0 0-.5-.5z"
+        />
+      </svg>
     </a>
 
     <main class="m-5">
-        <section class="mt-5">
-            <div class="row mt-5">
-                <div class="col-md-1 d-md-block d-sm-none  m-auto socialnetwork">
-                    <a class="nav-link " href="https://www.linkedin.com/in/leon-zhang-design/"><i
-                            class="fa fa-linkedin-square" style="font-size: 1em;"></i></a>
-                    <a class="nav-link " href="https://www.pinterest.ca/leonzhang14224/"><i
-                            class="fa fa-pinterest-square" style="font-size: 1em;"></i></a>
-                    <a class="nav-link " href="https://github.com/leonzhang51"><i class="fa fa-github"
-                            style="font-size: 1em;"></i></a>
-                </div>
-                <div class="col-md-10 landpage mt-5 ">
-                    <div class="h-25"></div>
-                    <div class="row  ">
-
-                        <div class="col-md-4 mt-5 h-75 text-center ">
-                            <div class="introduction">
-                                <img src="./img/taichi.png" alt="taichi">
-                                <h1 class="font-weight-bold mt-3">Leon Zhang</h1>
-                                <p class="lead ">I am UX engineer who loves to Transform the Ideas Into Reality
-                                </p>
-                                <a class="nav-link text-primary mt-1" href="#Projects"><button
-                                        class='btn btn-outline-danger font-weight-bold'>View
-                                        My
-                                        Work</button></a>
-
-                            </div>
-
-
-
-                        </div>
-                        <div class="col-md-4 "></div>
-                        <div class="col-md-4 "></div>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-
-            <!--going down arrow-->
+      <section class="mt-5">
+        <div class="row mt-5">
+          <div class="col-md-1 d-md-block d-sm-none m-auto socialnetwork">
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/leon-zhang-design/"
+              ><i class="fa fa-linkedin-square" style="font-size: 1em"></i
+            ></a>
+            <a class="nav-link" href="https://www.pinterest.ca/leonzhang14224/"
+              ><i class="fa fa-pinterest-square" style="font-size: 1em"></i
+            ></a>
+            <a class="nav-link" href="https://github.com/leonzhang51"
+              ><i class="fa fa-github" style="font-size: 1em"></i
+            ></a>
+          </div>
+          <div class="col-md-10 landpage mt-5">
+            <div class="h-25"></div>
             <div class="row">
-                <div class="col-md-12 text-center fixed-bottom text-danger" id="arrow-down">
-                    <h3><i class="fa fa-arrow-down"></i></h3>
+              <div class="col-md-4 mt-5 h-75 text-center">
+                <div class="introduction">
+                  <img src="./img/taichi.png" alt="taichi" />
+                  <h1 class="font-weight-bold mt-3">Leon Zhang</h1>
+                  <p class="lead">
+                    I am UX engineer who loves to Transform the Ideas Into
+                    Reality
+                  </p>
+                  <a class="nav-link text-primary mt-1" href="#Projects"
+                    ><button class="btn btn-outline-danger font-weight-bold">
+                      View My Work
+                    </button></a
+                  >
                 </div>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
             </div>
-        </section>
-
-
-        <!--About me-->
-        <section id="about">
-            <div class="container" style="width:100%; margin-top:10vh;">
-                <h1 class="m-5 text-center">About Me</h1>
-                <div class="row aboutme_logo">
-                    <div class="col-md-2">
-                        <img src="../img/autodidact.jpg" class="img-fluid mb-5 d-block mx-auto" style="height: 8vh; ">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/delivers.jpg" class="img-fluid mb-5 d-block mx-auto" style="height: 8vh; ">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/empathy.jpg" class="img-fluid mb-5 mx-auto d-block" style="height: 8vh;">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/flexibility.jpg" class="img-fluid mb-5 mx-auto d-block" style="height: 8vh; ">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/passion.jpg" class="img-fluid mb-5 mx-auto d-block" style="height: 8vh; ">
-                    </div>
-                    <div class="col-md-2">
-                        <img src="../img/teamplayer.jpg" class="img-fluid mb-5 mx-auto d-block" style="height: 8vh; ">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6 text-center">
-                        <img src="svg/designer.svg" class="img-fluid mx-auto d-block" style="height:30vh;">
-                    </div>
-                    <div class="col-md-6 mt-5">
-                        <p>
-                            UX designer-developer (hybrid) focused on both customer and business needs. Champions client
-                            ideas
-                            and produces solutions for development and product design that meet revenue goals.
-                        </p>
-                        <ul class="pl-4">
-                            <li><strong>“How it Works” Focus:</strong> Adept at conceptualizing design ideas and
-                                bringing them
-                                to life with a focus on analysis, business requirements, and optimizing user experience.
-                            </li>
-                            <li><strong>Innovative Thinker:</strong> Sees the big picture and provides creative, unique
-                                solutions for customers, with the goal of engaging users and earning their repeat
-                                visits. </li>
-                            <li><strong>Business Results:</strong> Successful history of creating apps, landing pages,
-                                and new
-                                components that significantly increase traffic and revenue. </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row mt-5">
-
-                    <div class="col-md-6 pl-4 mt-5">
-
-                        <p><strong>UX Skills:</strong> Usability Testing, Rapid Prototyping and Wireframes, Interaction
-                            Design, User Research (interviews, surveys), Experience Strategy, Experience Map, User
-                            Journeys,
-                            Storyboards, Task Flows, Heuristic Evaluation, Information Architecture, UI Design/Graphic
-                            Design</p>
-                        <p><strong>UX Tools:</strong> Axure, Figma, Adobe XD, Sketch App</p>
-                        <p><strong>Languages:</strong> HTML 5, CSS3, JS, PHP, MYSQL, React JS, Angular, Jquery,
-                            Bootstrap
-                        </p>
-
-
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="svg/skills.svg" class="img-fluid mx-auto d-block" style="height:30vh;">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-6 text-center">
-                        <img src="svg/online_cv.svg" class="img-fluid mx-auto d-block" style="height:30vh;">
-                    </div>
-                    <div class="col-md-6 mt-5">
-                        <p>
-                            To learn more about me, please feel free to check out My CV<a href="my_cv.html"
-                                class="text-dark mx-1" style="font-size: 1em;"><u><strong>here.</strong></u></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!--Project sections-->
-        <section class="container-fluid" id="Projects">
-            <h1 class="m-5 text-center">Recent Projects</h1>
-            <div class="card-deck m-auto  " style="width:80%;">
-
-                <div class="card rounded">
-                    <a href="/html/reservation.html">
-                        <img class="card-img-top" src="../img/nightville_logo.jpg" alt="Card image cap">
-                    </a>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Example for improve order process on online reservation platform</h5>
-                        <p class="card-text">"Nightlife Ville" is a simple utility app meant to make plan nightlife as
-                            simple as hailing a Uber</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="/html/reservation.html"><button class="btn btn-dark">Detail</button></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="/html/grocery.html"><img class="card-img-top" src="../img/grocery/App_logo.jpg"
-                            alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Improve shopping experience for online Grocery Store</h5>
-                        <p class="card-text">Simplify the shopping process, finish grocery shopping tasks by choosing
-                            recipes and meal plans, all the process as simple as 6 clicks.
-                        </p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="/html/grocery.html"><button class="btn btn-dark">Detail</button></a>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="./html/art_store.html"><img class="card-img-top" src="../img/artstore/applogo.png"
-                            alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Improve shopping experience for online Art Store</h5>
-                        <p class="card-text">Add product introduction and product customize service to boost website
-                            revenue and improve the shopping experience.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="./html/art_store.html"><button class="btn btn-dark">Detail</button></a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="container-fluid mt-5 text-center">
-            <h1 class="m-5 text-center">Other UI Design</h1>
-            <div class="row ">
-                <div class="col-md-3 otherUi text-center mt-3" id="sports_club">
-                    <img src="./img/other_ui/fitness.png" alt="sports_club">
-                    <h5>Sports club website UI</h5>
-                </div>
-                <div class="col-md-3 otherUi text-center mt-3" id="beats">
-                    <img src="./img/project_image/beats/Sign_in.png" alt="beats_online">
-                    <h5>Beats online trading platform</h5>
-                </div>
-                <div class="col-md-3 otherUi text-center mt-3" id="parking">
-                    <img src="./img/project_image/city_parking/appCover.png" alt="city_parking">
-                    <h5>City parking mobile APP</h5>
-                </div>
-                <div class="col-md-3 otherUi text-center mt-3" id="ondemand">
-                    <img src="./img/project_image/ondemand/app_logo.png" alt="on-demand">
-                    <h5>On-demand service mobile APP</h5>
-                </div>
-
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-4 otherUi text-center mt-3" id="grocery">
-                    <img src="./img/project_image/grocery_online/meal_plan_detail.png" alt="grocery_Online">
-                    <h5>new design for online grocery store</h5>
-                </div>
-                <div class="col-md-4 otherUi text-center mt-3" id="nightlife">
-                    <img src="./img/project_image/nightlifeVille/Appcoverpage.png" alt="nightlife">
-                    <h5>Reservation mobile APP</h5>
-                </div>
-
-                <div class="col-md-4 otherUi text-center mt-3" id="africa_travel">
-                    <img src="./img/project_image/travel/app_logo.jpg" alt="africa_travel">
-                    <h5>Africa travel website</h5>
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-
-
-        <!-- The Modal -->
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Modal Heading</h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        Modal body..
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
+          </div>
+          <div class="col-md-1"></div>
         </div>
 
+        <!--going down arrow-->
+        <div class="row">
+          <div
+            class="col-md-12 text-center fixed-bottom text-danger"
+            id="arrow-down"
+          >
+            <h3><i class="fa fa-arrow-down"></i></h3>
+          </div>
+        </div>
+      </section>
 
+      <!--About me-->
+      <section id="about">
+        <div class="container" style="width: 100%; margin-top: 10vh">
+          <h1 class="m-5 text-center">About Me</h1>
+          <div class="row aboutme_logo">
+            <div class="col-md-2">
+              <img
+                src="../img/autodidact.jpg"
+                class="img-fluid mb-5 d-block mx-auto"
+                style="height: 8vh"
+              />
+            </div>
+            <div class="col-md-2">
+              <img
+                src="../img/delivers.jpg"
+                class="img-fluid mb-5 d-block mx-auto"
+                style="height: 8vh"
+              />
+            </div>
+            <div class="col-md-2">
+              <img
+                src="../img/empathy.jpg"
+                class="img-fluid mb-5 mx-auto d-block"
+                style="height: 8vh"
+              />
+            </div>
+            <div class="col-md-2">
+              <img
+                src="../img/flexibility.jpg"
+                class="img-fluid mb-5 mx-auto d-block"
+                style="height: 8vh"
+              />
+            </div>
+            <div class="col-md-2">
+              <img
+                src="../img/passion.jpg"
+                class="img-fluid mb-5 mx-auto d-block"
+                style="height: 8vh"
+              />
+            </div>
+            <div class="col-md-2">
+              <img
+                src="../img/teamplayer.jpg"
+                class="img-fluid mb-5 mx-auto d-block"
+                style="height: 8vh"
+              />
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 text-center">
+              <img
+                src="svg/designer.svg"
+                class="img-fluid mx-auto d-block"
+                style="height: 30vh"
+              />
+            </div>
+            <div class="col-md-6 mt-5">
+              <p>
+                UX designer-developer (hybrid) focused on both customer and
+                business needs. Champions client ideas and produces solutions
+                for development and product design that meet revenue goals.
+              </p>
+              <ul class="pl-4">
+                <li>
+                  <strong>“How it Works” Focus:</strong> Adept at
+                  conceptualizing design ideas and bringing them to life with a
+                  focus on analysis, business requirements, and optimizing user
+                  experience.
+                </li>
+                <li>
+                  <strong>Innovative Thinker:</strong> Sees the big picture and
+                  provides creative, unique solutions for customers, with the
+                  goal of engaging users and earning their repeat visits.
+                </li>
+                <li>
+                  <strong>Business Results:</strong> Successful history of
+                  creating apps, landing pages, and new components that
+                  significantly increase traffic and revenue.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 pl-4 mt-5">
+              <p>
+                <strong>UX Skills:</strong> Usability Testing, Rapid Prototyping
+                and Wireframes, Interaction Design, User Research (interviews,
+                surveys), Experience Strategy, Experience Map, User Journeys,
+                Storyboards, Task Flows, Heuristic Evaluation, Information
+                Architecture, UI Design/Graphic Design
+              </p>
+              <p>
+                <strong>UX Tools:</strong> Axure, Figma, Adobe XD, Sketch App
+              </p>
+              <p>
+                <strong>Languages:</strong> HTML 5, CSS3, JS, PHP, MYSQL, React
+                JS, Angular, Jquery, Bootstrap
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="svg/skills.svg"
+                class="img-fluid mx-auto d-block"
+                style="height: 30vh"
+              />
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-6 text-center">
+              <img
+                src="svg/online_cv.svg"
+                class="img-fluid mx-auto d-block"
+                style="height: 30vh"
+              />
+            </div>
+            <div class="col-md-6 mt-5">
+              <p>
+                To learn more about me, please feel free to check out My CV<a
+                  href="my_cv.html"
+                  class="text-dark mx-1"
+                  style="font-size: 1em"
+                  ><u><strong>here.</strong></u></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Project sections-->
+      <section class="container-fluid" id="Projects">
+        <h1 class="m-5 text-center">Recent Projects</h1>
+        <div class="card-deck m-auto" style="width: 80%">
+          <div class="card rounded">
+            <a href="/html/reservation.html">
+              <img
+                class="card-img-top"
+                src="../img/nightville_logo.jpg"
+                alt="Card image cap"
+              />
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title">
+                Example for improve order process on online reservation platform
+              </h5>
+              <p class="card-text">
+                "Nightlife Ville" is a simple utility app meant to make plan
+                nightlife as simple as hailing a Uber
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="/html/reservation.html"
+                ><button class="btn btn-dark">Detail</button></a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <a href="/html/grocery.html"
+              ><img
+                class="card-img-top"
+                src="../img/grocery/App_logo.jpg"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">
+                Improve shopping experience for online Grocery Store
+              </h5>
+              <p class="card-text">
+                Simplify the shopping process, finish grocery shopping tasks by
+                choosing recipes and meal plans, all the process as simple as 6
+                clicks.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="/html/grocery.html"
+                ><button class="btn btn-dark">Detail</button></a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <a href="./html/art_store.html"
+              ><img
+                class="card-img-top"
+                src="../img/artstore/applogo.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">
+                Improve shopping experience for online Art Store
+              </h5>
+              <p class="card-text">
+                Add product introduction and product customize service to boost
+                website revenue and improve the shopping experience.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="./html/art_store.html"
+                ><button class="btn btn-dark">Detail</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid mt-5 text-center">
+        <h1 class="m-5 text-center">Other UI Design</h1>
+        <div class="row">
+          <div
+            class="col-md-6 col-xl-3 col-lg-4 otherUi text-center mt-3"
+            id="sports_club"
+          >
+            <img src="./img/other_ui/fitness.png" alt="sports_club" />
+            <h5>Sports club website UI</h5>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 col-lg-4 otherUi text-center mt-3"
+            id="beats"
+          >
+            <img
+              src="./img/project_image/beats/Sign_in.png"
+              alt="beats_online"
+            />
+            <h5>Beats online trading platform</h5>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 col-lg-4 otherUi text-center mt-3"
+            id="parking"
+          >
+            <img
+              src="./img/project_image/city_parking/appCover.png"
+              alt="city_parking"
+            />
+            <h5>City parking mobile APP</h5>
+          </div>
+          <div
+            class="col-md-6 col-xl-3 col-lg-4 otherUi text-center mt-3"
+            id="fintech"
+          >
+            <img src="./img/bank/cover.png" alt="fintech" />
+            <h5>UI for FinTech</h5>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div
+            class="col-md-6 col-xl-4 col-lg-4 otherUi text-center mt-3"
+            id="grocery"
+          >
+            <img
+              src="./img/project_image/grocery_online/meal_plan_detail.png"
+              alt="grocery_Online"
+            />
+            <h5>new design for online grocery store</h5>
+          </div>
+          <div
+            class="col-md-6 col-xl-4 col-lg-4 otherUi text-center mt-3"
+            id="nightlife"
+          >
+            <img
+              src="./img/project_image/nightlifeVille/Appcoverpage.png"
+              alt="nightlife"
+            />
+            <h5>Reservation mobile APP</h5>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-4 col-lg-4 otherUi text-center mt-3"
+            id="africa_travel"
+          >
+            <img
+              src="./img/project_image/travel/app_logo.jpg"
+              alt="africa_travel"
+            />
+            <h5>Africa travel website</h5>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                ×
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">Modal body..</div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="container mt-5">
-            <div class="row mt-5 text-center">
-                <div class="col-md-12 ">
-                    <p class=" mt-5" style="font-size: 1.5em;">
-                        <i class="fa fa-envelope mx-3"></i>leonzhang51@gmail.com
-
-                    </p>
-
-                </div>
-            </div>
-
-
-
-
-            <div class=" footer_social">
-                <a class="nav-link " href="https://www.linkedin.com/in/leon-zhang-design/"><i
-                        class="fa fa-linkedin-square" style="font-size: 1.5em;color:gray"></i></a>
-                <a class="nav-link " href="https://www.pinterest.ca/leonzhang14224/"><i class="fa fa-pinterest-square"
-                        style="font-size: 1.5em;color:gray"></i></a>
-
-                <a class="nav-link " href="https://github.com/leonzhang51"><i class="fa fa-github"
-                        style="font-size: 1.5em; color:gray"></i></a>
-            </div>
-
-
-
-
-
-
-
+      <div class="container mt-5">
+        <div class="row mt-5 text-center">
+          <div class="col-md-12">
+            <p class="mt-5" style="font-size: 1.5em">
+              <i class="fa fa-envelope mx-3"></i>leonzhang51@gmail.com
+            </p>
+          </div>
         </div>
 
+        <div class="footer_social">
+          <a
+            class="nav-link"
+            href="https://www.linkedin.com/in/leon-zhang-design/"
+            ><i
+              class="fa fa-linkedin-square"
+              style="font-size: 1.5em; color: gray"
+            ></i
+          ></a>
+          <a class="nav-link" href="https://www.pinterest.ca/leonzhang14224/"
+            ><i
+              class="fa fa-pinterest-square"
+              style="font-size: 1.5em; color: gray"
+            ></i
+          ></a>
+
+          <a class="nav-link" href="https://github.com/leonzhang51"
+            ><i class="fa fa-github" style="font-size: 1.5em; color: gray"></i
+          ></a>
+        </div>
+      </div>
     </footer>
 
-
     <script>
-        // ===== Scroll to Top ==== 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-                $('#return-to-top').fadeIn(200); // Fade in the arrow
-                $('#arrow-down').addClass('d-none'); //display arrow down at the bottom of the screen
-                $('nav').addClass('d-none'); //hide nav bar
-            } else {
-                $('#return-to-top').fadeOut(200); // Else fade out the arrow
-                $('#arrow-down').removeClass('d-none'); //hide arrow down
-                $('nav').removeClass('d-none'); //display nav bar
-            }
-        });
-        $('#return-to-top').click(function () { // When arrow is clicked
-            $('body,html').animate({
-                scrollTop: 0 // Scroll to top of body
-            }, 500);
-        });
-        //sports club modal
-        $("#sports_club").click(function (event) {
-            $('.modal-title').text('Sports Club');
-            $('.modal-body').html(
-                '<img src="./img/project_image/sport_club/landpage.png" alt="sports_club" style="width:100%">'
-            )
-            $("#myModal").modal();
-        });
-        //beats online modal
-        $("#beats").click(function () {
-            $('.modal-title').text('Beats online trading platform');
-            $('.modal-body').html(
-                '<img src="./img/project_image/beats/home_page.png" alt="beats-online" style="width:100%">' +
-                '<img src="./img/project_image/beats/Sign_up.png" alt="beats-online" style="width:100%;margin-top:20px">'
-            )
-            $("#myModal").modal();
-        });
-        //city parking ui modal
-        $("#parking").click(function () {
-            $('.modal-title').text('Mobile app for searching parking in the city');
-            $('.modal-body').html(
-                '<img src="./img/project_image/city_parking/Signin.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/user_profile.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/car_locator.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/car_parking_info.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/car_find.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/contact_info.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/parking_locator.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/parking_info_free.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/route.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/parking_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/change_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/city_parking/reset_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">'
-            )
-            $("#myModal").modal();
-        });
-        //on demand service Mobile ui modal
-        $("#ondemand").click(function () {
-            $('.modal-title').text('Mobile App for searching service around you');
-            $('.modal-body').html(
-                '<img src="./img/project_image/ondemand/home.png" alt="on-demand" style="width:calc(100%/6); margin:5px">' +
-                '<img src="./img/project_image/ondemand/expense.png" alt="on-demand" style="width:calc(100%/6); margin:5px">' +
-                '<img src="./img/project_image/ondemand/expense_list.png" alt="on-demand" style="width:calc(100%/6); margin:5px">' +
-                '<img src="./img/project_image/ondemand/task_list.png" alt="on-demand" style="width:calc(100%/6); margin:5px">' +
-                '<img src="./img/project_image/ondemand/contact.png" alt="on-demand" style="width:calc(100%/6); margin:5px">' +
-                '<img src="./img/project_image/ondemand/landing_page.png" alt="on-demand" style="width:calc(100%/6");margin:5px">' +
-                '<img src="./img/project_image/ondemand/Sign_In.png" alt="on-demand" style="width:calc(100%/6); margin:5px">' +
-                '<img src="./img/project_image/ondemand/Profile.png" alt="on-demand" style="width:calc(100%/6);margin:5px">' +
-                '<img src="./img/project_image/ondemand/Settings.png" alt="on-demand" style="width:calc(100%/6);margin:5px">' +
-                '<img src="./img/project_image/ondemand/Checkout.png" alt="on-demand" style="width:calc(100%/6);margin:5px">' +
-                '<img src="./img/project_image/ondemand/home2.png" alt="on-demand" style="width:calc(100%/6);margin:5px">' +
-                '<img src="./img/project_image/ondemand/favourite_list.png" alt="on-demand" style="width:calc(100%/6);margin:5px">' +
-                '<img src="./img/project_image/ondemand/service_provider_profile.png" alt="on-demand" style="width:calc(100%/6);margin:5px">' +
-                '<img src="./img/project_image/ondemand/service_provider_map_list.png" alt="on-demand" style="width:calc(100%/6);margin:5px">' +
-                '<img src="./img/project_image/ondemand/service_provider_detail_map.png" alt="on-demand" style="width:calc(100%/6);margin:5px">'
-            )
-            $("#myModal").modal();
-        });
-        // grocery store ui modal
-        $("#grocery").click(function () {
-            $('.modal-title').text('Shopping grocery online based on recipe and meal plan');
-            $('.modal-body').html(
-                '<img src="./img/project_image/grocery_online/landingpage.png" alt="grocery-online" style="width:100%">' +
-                '<img src="./img/project_image/grocery_online/Recipe_detail.png" alt="grocery-online" style="width:100%; margin-top:20px">'
-            )
-            $("#myModal").modal();
-        });
-        //reservation mobile app ui modal
-        $("#nightlife").click(function () {
-            $('.modal-title').text('Mobile app for planning your nightlife based on your budget.');
-            $('.modal-body').html(
-                '<img src="./img/project_image/nightlifeVille/Signin.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/reset_password.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/user_profile.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/home.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/Search.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/Favorites.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/Explore.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/activity_detail.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/Checkout.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/order_accepted.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/order_failed.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
-                '<img src="./img/project_image/nightlifeVille/MyPlan.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">'
-            )
-            $("#myModal").modal();
-        });
-        //africa travel web and mobile ui modal
-        $("#africa_travel").click(function (event) {
-            $('.modal-title').text('TRIP BOOKING(SAAS B2B)');
-            $('.modal-body').html(
-                '<img src="./img/project_image/travel/Desktop.png" alt="africa_travel" style="width:50%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/home.jpg" alt="africa_travel" style="width:50%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/Travel_Archive_Page.png" alt="africa_travel" style="width:50%">' +
-                '<img src="./img/project_image/travel/Travel_Single_Page.png" alt="africa_travel" style="width:50%">' +
-                '<img src="./img/project_image/travel/dashboard.png" alt="africa_travel" style="width:100%">' +
-                '<img src="./img/project_image/travel/landing.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/landing1.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/landing2.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/landing3.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/login.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/forget_password.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/home_app.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
-                '<img src="./img/project_image/travel/explore.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">'
-            )
-            $("#myModal").modal();
-        });
+      // ===== Scroll to Top ====
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= 50) {
+          // If page is scrolled more than 50px
+          $("#return-to-top").fadeIn(200); // Fade in the arrow
+          $("#arrow-down").addClass("d-none"); //display arrow down at the bottom of the screen
+          $("nav").addClass("d-none"); //hide nav bar
+        } else {
+          $("#return-to-top").fadeOut(200); // Else fade out the arrow
+          $("#arrow-down").removeClass("d-none"); //hide arrow down
+          $("nav").removeClass("d-none"); //display nav bar
+        }
+      });
+      $("#return-to-top").click(function () {
+        // When arrow is clicked
+        $("body,html").animate(
+          {
+            scrollTop: 0, // Scroll to top of body
+          },
+          500
+        );
+      });
+      //sports club modal
+      $("#sports_club").click(function (event) {
+        $(".modal-title").text("Sports Club");
+        $(".modal-body").html(
+          '<img src="./img/project_image/sport_club/landpage.png" alt="sports_club" style="width:100%">'
+        );
+        $("#myModal").modal();
+      });
+      //beats online modal
+      $("#beats").click(function () {
+        $(".modal-title").text("Beats online trading platform");
+        $(".modal-body").html(
+          '<img src="./img/project_image/beats/home_page.png" alt="beats-online" style="width:100%">' +
+            '<img src="./img/project_image/beats/Sign_up.png" alt="beats-online" style="width:100%;margin-top:20px">'
+        );
+        $("#myModal").modal();
+      });
+      //city parking ui modal
+      $("#parking").click(function () {
+        $(".modal-title").text("Mobile app for searching parking in the city");
+        $(".modal-body").html(
+          '<img src="./img/project_image/city_parking/Signin.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/user_profile.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/car_locator.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/car_parking_info.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/car_find.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/contact_info.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/parking_locator.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/parking_info_free.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/route.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/parking_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/change_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/city_parking/reset_meter.png" alt="city_parking" style="width:calc(100% / 7); margin:5px">'
+        );
+        $("#myModal").modal();
+      });
+      // UI design for FinTech
+      $("#fintech").click(function () {
+        $(".modal-title").text("UI for FinTech");
+        $(".modal-body").html(
+          '<img src="./img/bank/dashboardSignin.png" alt="fintech" style="width:100%; margin:5px">' +
+            '<img src="./img/bank/bankdashboard.png" alt="fintech" style="width:100%; margin:5px">' +
+            '<img src="./img/bank/appUI1.png" alt="fintech" style="width:calc(100%/5); margin:5px">' +
+            '<img src="./img/bank/appUI2.png" alt="fintech" style="width:calc(100%/5); margin:5px">' +
+            '<img src="./img/bank/appUI3.png" alt="fintech" style="width:calc(100%/5); margin:5px">' +
+            '<img src="./img/bank/appUI4.png" alt="fintech" style="width:calc(100%/5"); margin:5px">'
+        );
+        $("#myModal").modal();
+      });
+      // grocery store ui modal
+      $("#grocery").click(function () {
+        $(".modal-title").text(
+          "Shopping grocery online based on recipe and meal plan"
+        );
+        $(".modal-body").html(
+          '<img src="./img/project_image/grocery_online/landingpage.png" alt="grocery-online" style="width:100%">' +
+            '<img src="./img/project_image/grocery_online/Recipe_detail.png" alt="grocery-online" style="width:100%; margin-top:20px">'
+        );
+        $("#myModal").modal();
+      });
+      //reservation mobile app ui modal
+      $("#nightlife").click(function () {
+        $(".modal-title").text(
+          "Mobile app for planning your nightlife based on your budget."
+        );
+        $(".modal-body").html(
+          '<img src="./img/project_image/nightlifeVille/Signin.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/reset_password.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/user_profile.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/home.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/search.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/Favorites.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/Explore.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/activity_detail.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/Checkout.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/order_accepted.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/order_failed.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">' +
+            '<img src="./img/project_image/nightlifeVille/MyPlan.png" alt="nightlife" style="width:calc(100% / 7); margin:5px">'
+        );
+        $("#myModal").modal();
+      });
+      //africa travel web and mobile ui modal
+      $("#africa_travel").click(function (event) {
+        $(".modal-title").text("TRIP BOOKING(SAAS B2B)");
+        $(".modal-body").html(
+          '<img src="./img/project_image/travel/Desktop.png" alt="africa_travel" style="width:50%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/home.jpg" alt="africa_travel" style="width:50%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/Travel_Archive_Page.png" alt="africa_travel" style="width:50%">' +
+            '<img src="./img/project_image/travel/Travel_Single_Page.png" alt="africa_travel" style="width:50%">' +
+            '<img src="./img/project_image/travel/dashboard.png" alt="africa_travel" style="width:100%">' +
+            '<img src="./img/project_image/travel/landing.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/landing1.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/landing2.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/landing3.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/login.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/forget_password.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/home_app.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">' +
+            '<img src="./img/project_image/travel/explore.png" alt="africa_travel" style="width:25%;border-radius: 8px;border:2px solid white;">'
+        );
+        $("#myModal").modal();
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
