@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <!--scroll progress Bar start-->
+    <div class="progress-bar" id="myBar"></div>
+    <!--end progress bar end-->
     <nav class="navbar navbar-expand-md navbar-light   fixed-top">
         <!-- <nav class="navbar navbar-expand-md  navbar-light   fixed-top"> -->
         <!-- Brand -->
@@ -347,42 +350,66 @@
 
 
     <footer>
-        <div class="container mt-5">
-            <div class="row mt-5 text-center">
-                <div class="col-md-12 ">
-                    <p class=" mt-5" style="font-size: 1.5em;">
-                        <i class="fa fa-envelope mx-3"></i>leonzhang51@gmail.com
-                       
-                    </p>
+      <div class="container mt-5">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer_social">
+          <a
+            class="nav-link"
+            href="https://www.linkedin.com/in/leon-zhang-design/"
+          >
+            <i class="fa fa-linkedin-square"></i
+          ></a>
+          <a class="nav-link" href="https://www.pinterest.ca/leonzhang14224/">
+            <i class="fa fa-pinterest-square"></i
+          ></a>
 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-5"></div>
-                <div class="col-sm-2">
-                    <div class="row">
-                        <div class="col-sm-4"><a class="nav-link "
-                                href="https://www.linkedin.com/in/leon-zhang-design/"><i class="fa fa-linkedin-square"
-                                    style="font-size: 1.5em;color:gray"></i></a>
-                        </div>
-                        <div class="col-sm-4">
-                            <a class="nav-link " href="https://www.pinterest.ca/leonzhang14224/"><i
-                                    class="fa fa-pinterest-square" style="font-size: 1.5em;color:gray"></i></a>
-                        </div>
-                        <div class="col-sm-4">
-                            <a class="nav-link " href="https://github.com/leonzhang51"><i class="fa fa-github"
-                                    style="font-size: 1.5em; color:gray"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5"></div>
-            </div>
+          <a class="nav-link" href="https://github.com/leonzhang51"
+            ><i class="fa fa-github"></i
+          ></a>
         </div>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="../index.html"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../index.html#Projects">My Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./my_cv.html">My CV</a>
+          </li>
+        </ul>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="text-white" style="font-size: 1.5em">
+              &copy2021 Leon | All Right Reserved
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
     <script>
         // ===== Scroll to Top ==== 
         $(window).scroll(function () {
+            //scroll bar control code
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        //for back to top button and scroll down arrow
             if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
                 $('#return-to-top').fadeIn(200); // Fade in the arrow
                 $('#arrow-down').addClass('d-none'); //hide arrow down
