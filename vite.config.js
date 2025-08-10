@@ -9,5 +9,26 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: "assets",
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        entryFileNames: "assets/[name]-[hash].js",
+        chunkFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash].[ext]",
+      },
+    },
+  },
+  esbuild: {
+    loader: "jsx",
+    include: /src\/.*\.[jt]sx?$/,
+    exclude: [],
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        ".js": "jsx",
+        ".jsx": "jsx",
+      },
+    },
   },
 });
