@@ -3,15 +3,22 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Cache-Control: public, max-age=31536000
 
 /*.js
   Content-Type: application/javascript; charset=utf-8
-
-/*.jsx
-  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: public, max-age=31536000
 
 /*.mjs
   Content-Type: application/javascript; charset=utf-8
+  Cache-Control: public, max-age=31536000
 
 /*.css
   Content-Type: text/css; charset=utf-8
+  Cache-Control: public, max-age=31536000
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
