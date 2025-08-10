@@ -1,5 +1,33 @@
 import { useState } from 'react'
 
+// Import all images
+import fitnessImg from '../assets/images/other_ui/fitness.png'
+import landpageImg from '../assets/images/project_image/sport_club/landpage.png'
+import beatsSignInImg from '../assets/images/project_image/beats/Sign_in.png'
+import beatsHomeImg from '../assets/images/project_image/beats/home_page.png'
+import beatsSignUpImg from '../assets/images/project_image/beats/Sign_up.png'
+import parkingCoverImg from '../assets/images/project_image/city_parking/appCover.png'
+import parkingSigninImg from '../assets/images/project_image/city_parking/Signin.png'
+import parkingProfileImg from '../assets/images/project_image/city_parking/user_profile.png'
+import parkingLocatorImg from '../assets/images/project_image/city_parking/car_locator.png'
+import parkingInfoImg from '../assets/images/project_image/city_parking/car_parking_info.png'
+import bankCoverImg from '../assets/images/bank/cover.png'
+import bankSigninImg from '../assets/images/bank/dashboardSignin.png'
+import bankDashboardImg from '../assets/images/bank/bankdashboard.png'
+import bankUI1Img from '../assets/images/bank/appUI1.png'
+import bankUI2Img from '../assets/images/bank/appUI2.png'
+import groceryMealDetailImg from '../assets/images/project_image/grocery_online/meal_plan_detail.png'
+import groceryLandingImg from '../assets/images/project_image/grocery_online/landingpage.png'
+import groceryRecipeImg from '../assets/images/project_image/grocery_online/Recipe_detail.png'
+import nightlifeCoverImg from '../assets/images/project_image/nightlifeVille/Appcoverpage.png'
+import nightlifeSigninImg from '../assets/images/project_image/nightlifeVille/Signin.png'
+import nightlifeHomeImg from '../assets/images/project_image/nightlifeVille/home.png'
+import nightlifeSearchImg from '../assets/images/project_image/nightlifeVille/search.png'
+import travelLogoImg from '../assets/images/project_image/travel/app_logo.jpg'
+import travelDesktopImg from '../assets/images/project_image/travel/Desktop.png'
+import travelDashboardImg from '../assets/images/project_image/travel/dashboard.png'
+import travelLandingImg from '../assets/images/project_image/travel/landing.png'
+
 function OtherUISection() {
   const [selectedProject, setSelectedProject] = useState(null)
 
@@ -7,68 +35,44 @@ function OtherUISection() {
     {
       id: 'sports-club',
       title: 'Sports club website UI',
-      image: '/src/assets/images/other_ui/fitness.png',
-      modalImages: ['/src/assets/images/project_image/sport_club/landpage.png']
+      image: fitnessImg,
+      modalImages: [landpageImg]
     },
     {
       id: 'beats',
       title: 'Beats online trading platform',
-      image: '/src/assets/images/project_image/beats/Sign_in.png',
-      modalImages: [
-        '/src/assets/images/project_image/beats/home_page.png',
-        '/src/assets/images/project_image/beats/Sign_up.png'
-      ]
+      image: beatsSignInImg,
+      modalImages: [beatsHomeImg, beatsSignUpImg]
     },
     {
       id: 'parking',
       title: 'City parking mobile APP',
-      image: '/src/assets/images/project_image/city_parking/appCover.png',
-      modalImages: [
-        '/src/assets/images/project_image/city_parking/Signin.png',
-        '/src/assets/images/project_image/city_parking/user_profile.png',
-        '/src/assets/images/project_image/city_parking/car_locator.png',
-        '/src/assets/images/project_image/city_parking/car_parking_info.png'
-      ]
+      image: parkingCoverImg,
+      modalImages: [parkingSigninImg, parkingProfileImg, parkingLocatorImg, parkingInfoImg]
     },
     {
       id: 'fintech-ui',
       title: 'UI for FinTech',
-      image: '/src/assets/images/bank/cover.png',
-      modalImages: [
-        '/src/assets/images/bank/dashboardSignin.png',
-        '/src/assets/images/bank/bankdashboard.png',
-        '/src/assets/images/bank/appUI1.png',
-        '/src/assets/images/bank/appUI2.png'
-      ]
+      image: bankCoverImg,
+      modalImages: [bankSigninImg, bankDashboardImg, bankUI1Img, bankUI2Img]
     },
     {
       id: 'grocery-ui',
       title: 'New design for online grocery store',
-      image: '/src/assets/images/project_image/grocery_online/meal_plan_detail.png',
-      modalImages: [
-        '/src/assets/images/project_image/grocery_online/landingpage.png',
-        '/src/assets/images/project_image/grocery_online/Recipe_detail.png'
-      ]
+      image: groceryMealDetailImg,
+      modalImages: [groceryLandingImg, groceryRecipeImg]
     },
     {
       id: 'nightlife-ui',
       title: 'Reservation mobile APP',
-      image: '/src/assets/images/project_image/nightlifeVille/Appcoverpage.png',
-      modalImages: [
-        '/src/assets/images/project_image/nightlifeVille/Signin.png',
-        '/src/assets/images/project_image/nightlifeVille/home.png',
-        '/src/assets/images/project_image/nightlifeVille/search.png'
-      ]
+      image: nightlifeCoverImg,
+      modalImages: [nightlifeSigninImg, nightlifeHomeImg, nightlifeSearchImg]
     },
     {
       id: 'africa-travel-ui',
       title: 'Africa travel website',
-      image: '/src/assets/images/project_image/travel/app_logo.jpg',
-      modalImages: [
-        '/src/assets/images/project_image/travel/Desktop.png',
-        '/src/assets/images/project_image/travel/dashboard.png',
-        '/src/assets/images/project_image/travel/landing.png'
-      ]
+      image: travelLogoImg,
+      modalImages: [travelDesktopImg, travelDashboardImg, travelLandingImg]
     }
   ]
 
