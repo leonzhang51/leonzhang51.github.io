@@ -1,10 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import budgetingCover from "../assets/images/budgeting/appCover.jpg";
-import aiPlatformCover from "../assets/images/AIPlatform/coverpage.png";
-import africaTravelCover from "../assets/images/africa_travel/appCover.png";
-import nightvilleLogo from "../assets/images/nightville_logo.jpg";
-import groceryLogo from "../assets/images/grocery/App_logo.jpg";
+import { projectsData } from "../utils/projectsData";
 
 function ProjectsSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,58 +27,16 @@ function ProjectsSection() {
     };
   }, []);
 
-  const projects = [
-    {
-      id: "fintech",
-      title: "Personal budgeting Mobile APP",
-      description:
-        "Help millennials understand personal financial statement, take control their money, and optimize the spending",
-      image: budgetingCover,
-      link: "/project/fintech",
-      category: "Mobile App",
-      tags: ["UX Design", "Mobile", "FinTech"],
-    },
-    {
-      id: "ai-platform",
-      title: "The AI Price prediction platform",
-      description:
-        "The Price prediction platform is an AI SaaS solution that boosts revenue by optimizing the service or product price based on demand and supply.",
-      image: aiPlatformCover,
-      link: "/project/ai-platform",
-      category: "Web Platform",
-      tags: ["AI/ML", "SaaS", "Web Design"],
-    },
-    {
-      id: "travel-africa",
-      title: "Online travel system for traveler and agent",
-      description:
-        "Provide hassle free experience for users who want to travel in West Africa",
-      image: africaTravelCover,
-      link: "/project/travel-africa",
-      category: "Web Platform",
-      tags: ["Travel", "B2B", "UX Design"],
-    },
-    {
-      id: "reservation",
-      title: "Online Reservation APP",
-      description:
-        '"Nightlife Ville" is a simple utility app meant to make plan nightlife as simple as hailing a Uber',
-      image: nightvilleLogo,
-      link: "/project/reservation",
-      category: "Mobile App",
-      tags: ["Mobile", "Booking", "UX Design"],
-    },
-    {
-      id: "grocery",
-      title: "Improve shopping experience for online Grocery Store",
-      description:
-        "Simplify the shopping process, finish grocery shopping tasks by choosing recipes and meal plans, all the process as simple as 6 clicks.",
-      image: groceryLogo,
-      link: "/project/grocery",
-      category: "E-commerce",
-      tags: ["E-commerce", "UX Research", "Web Design"],
-    },
-  ];
+  // Transform projectsData to match the expected format for the projects grid
+  const projects = projectsData.map((project) => ({
+    id: project.id,
+    title: project.title,
+    description: project.description,
+    image: project.coverImage,
+    link: `/project/${project.id}`,
+    category: project.category || "Project",
+    tags: project.tags || [],
+  }));
 
   return (
     <section id="projects" ref={sectionRef} className="py-20 bg-white">

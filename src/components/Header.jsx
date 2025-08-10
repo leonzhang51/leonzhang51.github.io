@@ -60,7 +60,7 @@ function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-200 group-hover:w-full"></span>
             </button>
             <a
-              href="/src/assets/images/Leon_Zhang_Product_Designer.pdf"
+              href="/Leon_Zhang_Product_Designer.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="font-display text-gray-700 hover:text-primary-500 transition-colors duration-200 relative group"
@@ -95,7 +95,7 @@ function Header() {
                   About
                 </button>
                 <a
-                  href="/src/assets/images/Leon_Zhang_Product_Designer.pdf"
+                  href="/Leon_Zhang_Product_Designer.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-primary-500 transition-colors duration-200 font-display"
