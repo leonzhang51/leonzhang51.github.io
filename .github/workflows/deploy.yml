@@ -3,17 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
-# Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -21,10 +12,7 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,50 +28,13 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          NODE_OPTIONS: "--max-old-space-size=4096"
 
       - name: Add .nojekyll file
         run: touch dist/.nojekyll
 
-      - name: Fix MIME types for GitHub Pages
-        run: |
-          # Ensure all JS files have proper extensions and are served correctly
-          find dist -name "*.js" -exec echo "Processing: {}" \;
-          # Add web.config for IIS/Azure (if needed)
-          cat > dist/web.config << 'EOF'
-          <?xml version="1.0" encoding="utf-8"?>
-          <configuration>
-            <system.webServer>
-              <staticContent>
-                <mimeMap fileExtension=".js" mimeType="application/javascript" />
-                <mimeMap fileExtension=".mjs" mimeType="application/javascript" />
-                <mimeMap fileExtension=".css" mimeType="text/css" />
-              </staticContent>
-              <rewrite>
-                <rules>
-                  <rule name="React Routes" stopProcessing="true">
-                    <match url=".*" />
-                    <conditions logicalGrouping="MatchAll">
-                      <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-                      <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-                    </conditions>
-                    <action type="Rewrite" url="/index.html" />
-                  </rule>
-                </rules>
-              </rewrite>
-            </system.webServer>
-          </configuration>
-          EOF
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "./dist"
-
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
