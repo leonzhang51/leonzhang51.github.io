@@ -1,11 +1,23 @@
 import { useParams } from 'react-router-dom'
-import { projectsData } from '../utils/projectsData'
+import FintechProject from '../components/projects/FintechProject'
+import AIPlatformProject from '../components/projects/AIPlatformProject'
+import TravelAfricaProject from '../components/projects/TravelAfricaProject'
+import ReservationProject from '../components/projects/ReservationProject'
+import GroceryProject from '../components/projects/GroceryProject'
+
+const projectComponents = {
+  'fintech': FintechProject,
+  'ai-platform': AIPlatformProject,
+  'travel-africa': TravelAfricaProject,
+  'reservation': ReservationProject,
+  'grocery': GroceryProject,
+}
 
 function ProjectDetail() {
   const { projectId } = useParams()
-  const project = projectsData.find(p => p.id === projectId)
+  const ProjectComponent = projectComponents[projectId]
 
-  if (!project) {
+  if (!ProjectComponent) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Project Not Found</h1>
@@ -16,22 +28,7 @@ function ProjectDetail() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-800 mb-6">{project.title}</h1>
-        <div className="mb-8">
-          <img 
-            src={project.coverImage} 
-            alt={project.title}
-            className="w-full rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="prose max-w-none">
-          <p className="text-lg text-gray-600 mb-6">{project.description}</p>
-          {project.content && (
-            <div dangerouslySetInnerHTML={{ __html: project.content }} />
-          )}
-        </div>
-      </div>
+      <ProjectComponent />
     </div>
   )
 }
